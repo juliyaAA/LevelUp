@@ -1,0 +1,62 @@
+@import 'base/mixins';
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.contаiner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.relativ {
+    position: relative;
+}
+.oblique::after {
+    @include element();
+    top: 12%;
+    right: 51em;
+    -webkit-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+}
+.line::after {
+    @include element();
+    top: 43%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 51em;
+}
+.skew::after {
+    @include element();
+    top: 74%;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+    right: 51em;
+}
+.bevel::before {
+    @include element();
+    right: 24em;
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+    top: 12%;
+}
+.slanting::before {
+    @include element();
+    top: 42%;
+    right: 24em;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.bias::before {
+    @include element();
+    top: 74%;
+    right: 24em;
+    -webkit-transform: rotate(125deg);
+    transform: rotate(125deg);
+}
+@import 'blocks/promo';
+@import 'blocks/carusel';
+@import 'blocks/composition';
+@import 'blocks/form';
+@import 'blocks/main';
+@import 'blocks/button';
+@import 'base/media'

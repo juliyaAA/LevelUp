@@ -1,0 +1,53 @@
+.composition {
+    overflow: hidden;
+    background-color: #ad90a1;
+    min-height: 450px;
+    padding: 1vw;
+    &__flex {
+       @include flex();
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        position: relative;
+    }
+    &__flex-width {
+        width: 33.3%;
+    }
+    &__flex-col {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        min-height: 185px;
+        background-color: #d8cad2;
+        padding: 46px 5px 0;
+        margin-top: 20px;
+    }
+    &__flex-centr {
+        width: 100%;
+        max-width: 295px;
+        margin: 0 auto;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+    &__flex-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 auto;
+        img {
+            display: block;
+            width: 45px;
+            margin: 0 auto;
+            padding: 18px;
+        }
+    }
+    &__flex-descr {
+        margin-top: 35px;
+        font-size: 15px;
+        text-align: center;
+    }
+}

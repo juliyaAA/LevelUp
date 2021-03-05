@@ -1,0 +1,53 @@
+.main {
+    overflow: hidden;
+    padding: 20px 10px;
+    min-height: 500px;
+    background: #ffeeaa85;
+    &__description {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 850px;
+        &_img {
+            width: 100%;
+            max-width: 405px;
+            display: block;
+            margin: 0 auto;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+        &_tit {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: #734d4d;
+            text-align: center;
+            width: 100%;
+            margin-top: 3%;
+            max-width: 330px;
+            padding: 1%;
+        }
+    }
+    &__list {
+        margin-top: 25px;
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        p {
+            margin-top: 25px;
+            font-size: 25px;
+        }
+        &_ul li {
+            display: inline-block;
+            margin-top: 15px;
+            list-style-type: none;
+            font-size: 21px;
+        }
+        &_ul li:before {
+            content: "\00AB";
+        }
+    }
+}

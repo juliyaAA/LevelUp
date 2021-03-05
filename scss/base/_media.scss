@@ -1,0 +1,255 @@
+@media screen and (max-width: 1200px) {
+    .contаiner {
+        max-width: 950px;
+        width: 90%;
+    }
+    @mixin element() {
+        height: 26vh;
+    }
+    .oblique::after {
+        right: 67%;
+    }
+    .line::after {
+        right: 67%;
+    }
+    .skew::after {
+        right: 67%;
+    }
+    .bevel::before {
+        right: 33%;
+    }
+    .slanting::before {
+        right: 33%;
+    }
+    .bias::before {
+        right: 33%;
+    }
+    .promo {
+        &__descr {
+            &_img img {
+                width: 19vw;
+            }
+            &_list {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .main {
+        &__description img {
+            width: 60%;
+            &_tit {
+                font-size: 1.2rem;
+            }
+        }
+        &__list {
+            p {
+                font-size: 1rem;
+            }
+            &_ul li {
+                font-size: 1rem;
+            } 
+        }  
+    }
+    .composition {
+        &__flex {
+            width: 100%;
+        }
+        &__flex-centr img {
+            width: 80%;
+        }
+    }
+    .form {
+        &__order {
+            &_card {
+                border-right: none;
+            }
+            &_card-img {
+                width: 50%;
+            }
+        }
+        .countdown {
+            font-size: 1rem;
+        }
+        .btn_min {
+            margin-top: 43px;
+        }
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    
+    .composition {
+         &__flex-col {
+            width: 70%;
+            padding: 20px 0 10px;
+        }
+        &__flex-img {
+            width: 50%;
+            height: 50%;
+            img {
+                width: 50%;
+            }
+        }
+        &__flex-centr {
+            width: 100%;
+            max-width: 295%;
+        }
+    }
+   
+    .oblique::after, .line::after, .skew::after, .bevel::before, .slanting::before, .bias::before {
+        height: 0;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .promo {
+       &__descr {
+            &_des {
+                justify-content: center;
+            }
+            &_title {
+                font-size: 3rem;
+            }
+        } 
+    }
+    .main {
+        min-height: 300px;
+        &__description {
+            &_img {
+                max-width: 373px;
+                margin: 0;
+            }
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 60%;
+        }
+    }
+    #form {
+        max-width: 430px;
+    }
+        
+}   
+@media screen and (max-width: 480px) {
+    .promo {
+        &__descr {
+            &_list {
+                font-size: 1rem;
+            }
+        }
+    }
+    .composition {
+        padding: 3%;
+        &__flex {
+            display: block;
+        }
+        &__flex-width:nth-child(odd) {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__flex-centr {
+            display: none;
+        }
+        .btn {
+            margin-top: 8%;
+        }
+    }
+    .carousel {
+        &__inner{
+            &_title {
+                font-size: 14px;
+            }
+        }
+    }
+    .main {
+        &__description {
+            &_tit {
+                font-size: 0.8rem;
+            }
+        }
+        &__list {
+            &_ul li {
+                font-size: 0.9rem;
+            }
+        }
+    }
+  
+    .form {
+        #form {
+            max-width: 315px;
+            font-size: 12px;
+        }
+        &__order{
+            &_bay input {
+                width: 90%;
+            }
+        }
+    }
+    .btn {
+        max-width: 135px;
+        font-size: 0.9rem;
+    }
+    .btn_min {
+        width: 120px;
+        font-size: 11px;
+        margin-top: 22%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .composition {
+        &__flex-col {
+            min-height: 150px;
+            width: 100%;
+        }
+        &__flex-descr {
+            margin-top: 6%;
+            font-size: 0.8rem;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 100%;
+            &_descr {
+                p {
+                    font-size: 20px;
+                }
+            } 
+            &_title {
+                font-size: 12px;
+            }
+        }
+    }
+    .main {
+        &__description {
+            display: block;
+            img {
+                width: 95%;
+                margin-top: 0;
+            }
+            &_tit {
+                font-size: 0.8rem;
+            }
+        }
+        &__list {
+            &_ul {
+                li {
+                    display: block;
+                    font-size: 0.9rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .form {
+        &__order {
+            &_price-new {
+                span {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
