@@ -1,11 +1,11 @@
-@mixin element() {
+%element {
     content: '';
     display: block;
     position: absolute;
     height: 5em;
     border: 1px solid #fff;
 }
-@mixin flex {
+%for-flex {
     display: flex;
     align-items: center;
     display: -webkit-flex;

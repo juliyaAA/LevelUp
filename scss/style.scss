@@ -12,45 +12,51 @@ body {
     position: relative;
 }
 .oblique::after {
-    @include element();
+    @extend %element;
     top: 12%;
     right: 51em;
     -webkit-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
     transform: rotate(-55deg);
 }
 .line::after {
-    @include element();
+    @extend %element;
     top: 43%;
     -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     right: 51em;
 }
 .skew::after {
-    @include element();
+    @extend %element;
     top: 74%;
     -webkit-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
     transform: rotate(55deg);
     right: 51em;
 }
 .bevel::before {
-    @include element();
+    @extend %element;
     right: 24em;
     -webkit-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
     transform: rotate(55deg);
     top: 12%;
 }
 .slanting::before {
-    @include element();
+    @extend %element;
     top: 42%;
     right: 24em;
     -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 .bias::before {
-    @include element();
+    @extend %element;
     top: 74%;
     right: 24em;
     -webkit-transform: rotate(125deg);
+    -ms-transform: rotate(125deg);
     transform: rotate(125deg);
 }
 @import 'blocks/promo';
@@ -59,4 +65,4 @@ body {
 @import 'blocks/form';
 @import 'blocks/main';
 @import 'blocks/button';
-@import 'base/media'
+@import 'base/media';

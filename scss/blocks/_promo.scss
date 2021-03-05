@@ -36,7 +36,7 @@
             color: aquamarine;
         }
         &_des {
-            @include flex();
+            @extend %for-flex;
             -webkit-justify-content: space-between;
             -ms-justify-content: space-between;;
             justify-content: space-between;

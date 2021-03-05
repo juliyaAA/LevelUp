@@ -5,6 +5,8 @@
     background: #ffeeaa85;
     &__description {
         display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         margin: 0 auto;
         width: 100%;
         max-width: 850px;
@@ -34,7 +36,7 @@
         margin-top: 25px;
         text-align: center;
         width: 100%;
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
         p {
             margin-top: 25px;
@@ -44,7 +46,7 @@
             display: inline-block;
             margin-top: 15px;
             list-style-type: none;
-            font-size: 21px;
+            font-size: 17px;
         }
         &_ul li:before {
             content: "\00AB";

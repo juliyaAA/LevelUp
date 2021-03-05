@@ -4,7 +4,7 @@
     min-height: 450px;
     padding: 1vw;
     &__flex {
-       @include flex();
+       @extend %for-flex;
         justify-content: space-between;
         -webkit-justify-content: space-between;
         -ms-justify-content: space-between;
